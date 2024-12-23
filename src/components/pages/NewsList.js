@@ -10,7 +10,7 @@ function NewsList({category}) {
     const API_KEY = 'c46ac2ca763445b7890477ecaebeae99';
 
     useEffect(() => {
-        const fetchNews = async () =>{
+        const fetchNews = async () => {
             setLoading(true);
             try {
                 const response = await axios.get(
