@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ResponsiveAppBar from '../navbar/ResponsiveAppBar';
 
 const TodoApp = () => {
   const [task, setTask] = useState('');
@@ -24,6 +25,7 @@ const TodoApp = () => {
 
   return (
     <div>
+      <ResponsiveAppBar />
       <h2>Todo App</h2>
       <form onSubmit={handleAddTask}>
         <input

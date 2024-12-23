@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import ResponsiveAppBar from '../navbar/ResponsiveAppBar';
 
 function Feedback() {
 
@@ -15,6 +16,7 @@ function Feedback() {
 
   return (
     <div>
+        <ResponsiveAppBar/>
         <h4>FeedBack Form</h4>
         <form onSubmit={handleSubmit}>
             <input type='text' placeholder='UserName' value={username}

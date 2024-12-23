@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Button from './Button'
+import ResponsiveAppBar from '../navbar/ResponsiveAppBar';
 
 function Counter() {
   let [count, setCount] = useState(0);
@@ -16,6 +17,7 @@ function Counter() {
 
   return (
     <div>
+        <ResponsiveAppBar/>
         <h1>Counter Application</h1>
         <h4>Count: {count}</h4>
         <Button onClick={increament} value="+" style={{color:'white', backgroundColor: 'green'}}/>

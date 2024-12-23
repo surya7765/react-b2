@@ -1,18 +1,12 @@
 import React from 'react';
-import Counter from '../pages/Counter'
-import Feedback from '../pages/Feedback';
-import TodoApp from '../pages/Todo';
-import News from '../pages/News';
+import ResponsiveAppBar from '../navbar/ResponsiveAppBar';
 
 class Home extends React.Component{
     render(){
         return (
             <>
+                <ResponsiveAppBar />
                 <h1>Home Page</h1>
-                {/* <Counter/> */}
-                {/* <Feedback/> */}
-                {/* <TodoApp /> */}
-                <News/>
             </>
         )
     }
